@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
             BasicLayoutsTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android", "Lintang", "5025201045", "PPb-I")
+                    Greeting("Android", "Lintang", "5025201045", "PPB-I")
                 }
             }
         }
@@ -35,29 +35,29 @@ class MainActivity : ComponentActivity() {
 fun Greeting(title: String, name: String, nrp: String, kelas: String, modifier: Modifier = Modifier) {
     Column(
         modifier = Modifier.fillMaxSize(),
-        alignment = Alignment.Center
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             fontFamily = FontFamily.SansSerif,
-            fontSize = 16.sp,
+            fontSize = 40.sp,
             color = Color.Red,
             text = "Hello $title!",
         )
         Text(
             fontFamily = FontFamily.Serif,
-            fontSize = 14.sp,
+            fontSize = 36.sp,
             color = Color.Cyan,
             text = "Name: $name"
         )
         Text(
             fontFamily = FontFamily.Serif,
-            fontSize = 14.sp,
+            fontSize = 36.sp,
             color = Color.Cyan,
             text = "NRP: $nrp"
         )
         Text(
             fontFamily = FontFamily.Serif,
-            fontSize = 14.sp,
+            fontSize = 36.sp,
             color = Color.Cyan,
             text = "Kelas: $kelas"
         )
